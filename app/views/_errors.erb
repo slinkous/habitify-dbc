@@ -1,0 +1,5 @@
+<% if errors %>
+  <% errors.full_messages.each do |message| %>
+    <li class="error"><%= message %></li>
+  <% end %>
+<% end %>

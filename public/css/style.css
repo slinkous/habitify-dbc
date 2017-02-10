@@ -1,0 +1,24 @@
+* {
+  padding: 5px;
+}
+
+nav {
+  text-align: right;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+.inline {
+  display: inline;
+}
+
+.error {
+  color: red;
+}
+
+#url {
+  text-align: center;
+}
