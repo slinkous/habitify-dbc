@@ -21,7 +21,9 @@ require "sinatra/reloader" if development?
 require 'erb'
 
 require 'nokogiri'
-require 'habtica-client'
+require 'habitica_client'
+require 'dotenv'
+require 'open-uri'
 
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))

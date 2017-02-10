@@ -7,21 +7,24 @@ get '/tasks' do
 end
 
 post '/tasks' do
+  require 'open-uri'
   url = params[:url]
   page = Nokogiri::HTML(open(url))
-  links = page.css("a")
+  fragment = page.css('article.markdown-body')
+  links = fragment.css("a")
+  puts links
 
   task_texts = []
   links.each do |link|
     task_texts << "[#{link.text}](#{link["href"]})"
   end
-
+  puts task_texts
   task_texts.each do |task_text|
     habit = HabiticaClient.new(ENV['USER_ID'], ENV['API_TOKEN'])
-    .tasks.create(
+    habit.tasks.create(
       text: task_text,
       type: 'todo'
     )
   end
-  redirect 'https://habitica.com/#/tasks'
+  redirect "https://habitica.com/"
 end
