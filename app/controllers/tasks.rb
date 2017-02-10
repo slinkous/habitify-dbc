@@ -22,9 +22,11 @@ post '/tasks' do
   task_datas =[]
   task_texts.each do |text|
     jsonable = {
-      type: "todo"
+      type: "todo",
       text: text
     }
+    task_datas << jsonable
+  end
 
 
 
