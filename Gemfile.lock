@@ -31,10 +31,7 @@ GEM
       i18n (~> 0.5)
     habitica_client (1.0.1)
       httparty (~> 0.13)
-<<<<<<< HEAD
-=======
     hirb (0.7.3)
->>>>>>> 36c87d706f6b4fd5d7ea3e61e0f4e450762306f0
     httparty (0.14.0)
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
