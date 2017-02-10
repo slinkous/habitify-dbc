@@ -15,4 +15,16 @@ What if you could quickly organize your day's challenges into a game-ified todo 
 
 #### Tomorrow
 - build controller
--  
+-
+
+### Sources
+
+- [Habitica API](https://habitica.com/apidoc/)
+- [Habitica API Wiki](http://habitica.wikia.com/wiki/Application_Programming_Interface)
+- [Habitica Ruby Gem](https://github.com/wwqrd/habitica_client)
+- [Best Nokogiri Reference](http://ruby.bastardsbook.com/chapters/html-parsing/)
+- [Nokogiri Cheatsheet](https://github.com/sparklemotion/nokogiri/wiki/Cheat-sheet)
+- []
+
+
+
