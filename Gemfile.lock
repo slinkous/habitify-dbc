@@ -96,8 +96,8 @@ DEPENDENCIES
   factory_girl
   faker
   habitica_client
-  json
   hirb
+  json
   nokogiri
   pg
   rack-test
@@ -109,4 +109,4 @@ DEPENDENCIES
   sinatra-contrib
 
 BUNDLED WITH
-   1.13.7
+   1.14.3
