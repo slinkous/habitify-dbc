@@ -28,12 +28,18 @@ GEM
       activesupport (>= 3.0.0)
     faker (1.4.3)
       i18n (~> 0.5)
+    habitica_client (1.0.1)
+      httparty (~> 0.13)
+    hirb (0.7.3)
+    httparty (0.14.0)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     json (1.8.2)
     mime-types (2.4.3)
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.10.1)
+    multi_xml (0.6.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     pg (0.18.1)
@@ -87,6 +93,9 @@ DEPENDENCIES
   capybara
   factory_girl
   faker
+  habitica_client
+  hirb
+  nokogiri
   pg
   rack-test
   rake
@@ -97,4 +106,4 @@ DEPENDENCIES
   sinatra-contrib
 
 BUNDLED WITH
-   1.11.2
+   1.13.7
