@@ -1,0 +1,15 @@
+* {
+  padding: 10px;
+}
+
+nav {
+  align: right;
+}
+
+.inline {
+  display: inline;
+}
+
+.error {
+  color: red;
+}
