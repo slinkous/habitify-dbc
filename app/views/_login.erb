@@ -4,9 +4,9 @@
 
 <nav class="" align="right" style="padding-right:10px; padding-top:10px;">
 
-<a href="/"><h4 style="display:inline;padding-right:10px;">Home</h4></a>
+  <a href="/"><h4 style="display:inline;padding-right:10px;">Home</h4></a>
 
-<% if !logged_in? %>
+  <% if !logged_in? %>
 
   <a href="/users/new" style="padding-right:10px;"><h4 style="display:inline;">Register</h4></a>
 
@@ -17,15 +17,13 @@
     <input type="submit" value="Login">
   </form>
 
-<% else %>
-
-  <a href="/restaurants/new" style="padding-right:10px;"><h4 style="display:inline;">New Restaurant</h4></a>
+  <% else %>
 
   <form action="/sessions" method="post" style="display:inline;">
     <input type="hidden" name="_method" value="delete">
     <input type="submit" value="Logout">
   </form>
 
-<% end %>
+  <% end %>
 
 </nav>
