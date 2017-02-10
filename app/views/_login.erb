@@ -2,16 +2,16 @@
     <%= erb :'/_error_not_from_ar', layout: false, locals: { error: @error } %>
 <% end %>
 
-<nav class="" align="right" style="padding-right:10px; padding-top:10px;">
+<nav>
 
-  <a href="/"><h4 style="display:inline;padding-right:10px;">Home</h4></a>
+  <a href="/"><h4 style="display: inline;">Home</h4></a>
 
   <% if !logged_in? %>
 
-  <a href="/users/new" style="padding-right:10px;"><h4 style="display:inline;">Register</h4></a>
+  <a href="/users/new"><h4 style="display: inline;">Register</h4></a>
 
-  <form action="/sessions" method="post" style="display:inline">
-    <input type="email" name="new_login[email]" style="padding-right:10px;" placeholder="email">
+  <form style="display: inline;" action="/sessions" method="post">
+    <input type="email" name="new_login[email]" placeholder="email">
 
     <input type="password" name="new_login[password]" placeholder="password">
     <input type="submit" value="Login">
@@ -19,7 +19,7 @@
 
   <% else %>
 
-  <form action="/sessions" method="post" style="display:inline;">
+  <form style="display: inline;" action="/sessions" method="post">
     <input type="hidden" name="_method" value="delete">
     <input type="submit" value="Logout">
   </form>

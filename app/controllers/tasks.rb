@@ -9,15 +9,19 @@ end
 post '/tasks' do
   require 'open-uri'
   url = params[:url]
+  p params[:url]
   page = Nokogiri::HTML(open(url))
+
   fragment = page.css('article.markdown-body')
   links = fragment.css("a")
   puts links
+
 
   task_texts = {}
   links.each do |link|
     task_texts << "[#{link.text}](#{link["href"]})"
   end
+
   puts task_texts
   task_datas =[]
   task_texts.each do |text|
