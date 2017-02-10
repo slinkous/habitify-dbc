@@ -17,6 +17,7 @@ gem 'shotgun', '~>0.9.1'
 gem 'nokogiri'
 gem 'habitica_client'
 gem 'dotenv'
+gem 'json'
 
 group :test do
   gem 'shoulda-matchers'

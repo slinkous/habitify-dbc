@@ -14,17 +14,29 @@ post '/tasks' do
   links = fragment.css("a")
   puts links
 
-  task_texts = []
+  task_texts = {}
   links.each do |link|
     task_texts << "[#{link.text}](#{link["href"]})"
   end
   puts task_texts
-  task_texts.each do |task_text|
-    habit = HabiticaClient.new(ENV['USER_ID'], ENV['API_TOKEN'])
-    habit.tasks.create(
-      text: task_text,
-      type: 'todo'
-    )
-  end
+  task_datas =[]
+  task_texts.each do |text|
+    jsonable = {
+      type: "todo"
+      text: text
+    }
+
+
+
+  # habit = HabiticaClient.new("bc0f067b-2bdb-480a-a41e-6b3a81c86861", "656e5497-7d75-4ecf-9bf5-e09614f86715")
+
+  # begin
+  #   task_texts.each do |task_text|
+  #     habit.tasks.create(
+  #       text: task_text,
+  #       type: 'todo'
+  #     )
+  #   end
+  # rescue
   redirect "https://habitica.com/"
 end

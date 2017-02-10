@@ -95,6 +95,7 @@ DEPENDENCIES
   factory_girl
   faker
   habitica_client
+  json
   nokogiri
   pg
   rack-test
